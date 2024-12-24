@@ -1,0 +1,1355 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+html,body{
+    font-family: "pretendard";
+}
+body.no-scroll{
+    overflow-y: hidden;
+}
+h2{
+    font-size: 50px;
+}
+.title-color{
+    font-weight: 700;
+    color: #c30000;
+}
+/* !---------------------------------------------------------------sticky */
+.sticky{
+    width: auto;
+    height: auto;
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    z-index: 9999;
+}
+.sticky button{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+.sticky button img{
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #00000046;
+}
+.sticky h3{
+    font-size: 20px;
+    color: #c30000;
+    font-weight: 800;
+}
+.sticky p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #363636;
+    letter-spacing: -1px;
+}
+/* !----------------------------------------------------------------- modal */
+.modal-info{
+    width: 100%;
+    height: 100%;
+    background-color: #000000c4;
+    position: fixed;
+    z-index: 99999999;
+    top: 0;
+    display: flex;
+    align-items: center;
+    /* display: none; */
+}
+.modal-info .modal-box{
+    width: 1200px;
+    height: 716px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-image: url(../images/modal/modal-info.png);
+    background-position: center;
+    position: relative;
+    object-fit: cover;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.modal-box a{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+.modal-box button{
+    width: 251px;
+    height: 44px;
+    border: 1px solid #c30000;
+    border-radius: 8px;
+    color: #c30000;
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.modal-info button:hover{
+    color: #fff;
+    background-color: #c30000;
+}
+
+.modal-more{
+    width: 100%;
+    height: 100%;
+    background-color: #000000c4;
+    position: fixed;
+    z-index: 99999999;
+    top: 0;
+    display: flex;
+    align-items: center;
+    /* display: none; */
+}
+.modal-more .modal-morebox{
+    width: 1200px;
+    height: 716px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-position: center;
+    position: relative;
+    object-fit: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.modal-morebox a{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+.tablebox{
+    width: 1100px;
+    height: 561px;
+    overflow-y: scroll;
+    margin: 35px auto;
+}
+.tablebox::-webkit-scrollbar {
+    margin-left: 20px;
+    width: 8px; /* 스크롤바의 너비 */
+}
+.tablebox::-webkit-scrollbar-thumb {
+    background-color: #333; /* 스크롤바의 색상 */
+    border-radius: 4px; /* 둥근 모서리 */
+}
+.tablebox::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* 스크롤바 트랙 색상 */
+}
+.modal-morebox table{
+    width: 1085px;
+    height: 561px;
+    border-collapse: collapse;
+}
+.modal-morebox table tr td{
+    text-align: center;
+    border: 1px solid #b7b7b7;
+    height: 94px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #363636;
+}
+.modal-morebox table tr:first-child td{
+    height: 55px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #b7b7b7;
+}
+.modal-morebox table tr:first-child td:nth-child(2){
+    background-color: #e32f2f;
+}
+.modal-morebox table tr:first-child td:nth-child(3){
+    background-color: #b10000;
+}
+.modal-morebox table tr:first-child td:nth-child(4){
+    background-color: #740202;
+}
+.modal-morebox table tr td:first-child{
+    width: 170px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3a0101;
+    background-color: #fff5f5;
+}
+.modal-morebox table tr td:not(:first-child){
+    width: calc((1100px - 170px) / 3);
+}
+/* !------------------------------------------------------------------S header */
+header{
+    width: 100%;
+    height: 106px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 999999;
+}
+header .header-fixed{
+    margin: 0 auto;
+    width: 1200px;
+    height: 106px;
+    position: relative;
+}
+/* -----------------------------------------------------S .header-fiexd util */
+.header-fixed .util{
+    padding: 22px 0 0;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header-fixed .util li{
+    margin-left: 20px;
+}
+.header-fixed .util li a{
+    font-size: 14px;
+    font-family: "pretendard";
+    color: #acacac;
+}
+.header-fixed .util li a:hover{
+    color: #333;
+    font-weight: 500;
+}
+/* -----------------------------------------------------S .header-fixed gnb */
+.header-fixed nav{
+    position: absolute;
+    width: 1200px;
+    bottom: 10px;
+}
+.header-fixed nav .gnb-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.header-fixed nav .gnb{
+    width: 708px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+.header-fixed nav .gnb li a:hover{
+    font-weight: 500;
+}
+.header-fixed nav .icon-menu{
+    display: flex;
+    width: 310px;
+    justify-content: space-between;
+}
+.header-fixed nav .icon-menu .split{
+    margin-top: 10px;
+}
+.header-fixed nav .icon-menu .icon-talk img{
+    transform: translateY(2px);
+}
+.header-fixed nav .icon-menu .icon-receipt{
+    margin-top: 3px;
+}
+.header-fixed nav .icon-menu .icon-receipt img{ 
+    transform: translateY(3px);
+}
+.header-fixed nav .icon-menu .icon-list{
+    margin-top: 3px;
+}
+.header-fixed nav .icon-menu li a:hover{
+    font-weight: 500;
+}
+/* --------------------------------------------------- S header list */
+header .list{
+    width: 100%;
+    height: 235px;
+    background-color: rgba(255, 255, 2555, 0.96);
+    border-bottom: 1px solid #ccc;
+    /* display: none; */
+}
+.list .list-txtbox{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.list .list-txtbox>ul{
+    display: flex;
+    justify-content: space-between;
+}
+.list .list-txtbox>ul>li{
+    font-weight: 500;
+    font-size: 17px;
+}
+.list .list-txtbox .lnb li{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #363636;
+}
+.list .list-txtbox .lnb li:first-child{
+    margin-top: 8px;
+}
+.list .list-txtbox .lnb li a:hover{
+    font-weight: 400;
+    color: #c70d24;
+}
+/* !------------------------------------------------------------------S visual */
+.visual{
+    width: 100%;
+    height: 306px;
+    overflow: hidden;
+    margin-top: 106px;
+    display: flex;
+    justify-content: center;
+}
+.visual li a img{
+    height: 100%;
+    object-fit: cover;
+}
+
+/* !------------------------------------------------------------------S choice */
+.choice{
+    width: 100%;
+    height: 947px;
+    background-color: #f2f2f2;
+}
+.choice .choice-space{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+.choice .choice-space h2{
+    margin-left: 18px;
+}
+
+.choice .choice-space .choice-search{
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+/* --------------------------------S choice indi */
+.choice-search .choice-indi{
+    display: flex;
+    align-items: end;
+}
+.choice-search .choice-indi .choice-prev{
+    border: 0;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.choice-search .choice-indi p{
+    font-size: 15px;
+    color: #7d7d7d;
+    margin-right: 25px;
+}
+.choice-search .choice-indi h4{
+    font-size: 19px;
+    color: #282828;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.choice-search .choice-indi h5{
+    font-size: 17px;
+    color: #929292;
+    font-weight: 400;
+    margin-right: 15px;
+    margin-bottom: 1px;
+}
+.choice-search .choice-indi .choice-next{
+    border: 0;
+    margin-right: 20px;
+    cursor: pointer;
+}
+/* ------------------------------S search */
+.choice-search .search{
+    width: 401px;
+    height: 51px;
+    background-color: rgba(255, 255, 2555, 0.63);
+    border: 1px solid #787878;
+    border-radius: 30px;
+    position: relative;
+    padding: 0 20px;
+}
+.search input{
+    width: 320px;
+    border: 0;
+    background-color: transparent;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 14px;
+}
+.search input:focus{
+    border: 0;
+    outline: none;
+    color: #787878;
+}
+.search .search-btn{
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    cursor: pointer;
+}
+
+/* ------------------------------------S choice main layout */
+.choice-main{
+    width: auto;
+    height: auto;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice-main .sheetbox{
+    width: 781px;
+    height: 503px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.choice-main .sheet-space{
+    width: auto;
+    height: auto;
+    display: flex;
+
+}
+.choice-main .sheet-space>li{
+    width: 781px;
+    height: 503px;
+}
+
+.sheet-space li ul{
+    width: 781px;
+    height: 503px;
+    display: flex;
+    justify-content: space-between;
+}
+.sheet>ul>li{
+    width: 382px;
+    height: 503px;
+}
+/* -----------------------------------S best1 layout */
+.sheet-page1 .best1-sheet{
+    width: 382px;
+    height: 503px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    padding: 43px 23px 23px;
+    overflow: hidden;
+}
+.sheet-page1 .best-label{
+    width: 71px;
+    line-height: 28px;
+    background-color: #c30000;
+    border-radius: 10px 0 10px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+.sheet-page1 .best1-sheet #best1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sheet-page1 .best1-sheet #best1-img{
+    position: absolute;
+    width: 500px;
+    left: -50px;
+    bottom: 35px;
+    transition: 0.5s;
+}
+.sheet-page1 .best1-sheet:hover #best1-img{
+    transform: scale(1.1);
+}
+
+.car-name{
+    font-size: 25px;
+    font-weight: 700;
+}
+.price{
+    font-size: 25px;
+    font-weight: 600;
+    color: #c30000;
+    margin-top: 3px;
+}
+.now, .free{
+    margin-top: 10px;
+}
+/* --------------------------------------S normal sheet layout */
+
+
+.sheet .normal-sheet{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.sheet .normal-sheet>li{
+    width: 382px;
+    height: 242px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.sheet .normal-sheet>li .product{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 43px 23px 23px;
+    overflow: hidden;
+}
+.product .best-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.product #normal-img{
+    position: absolute;
+    right: -20px;
+    bottom: 0px;
+    width: 270px;
+    transition: 0.5s;
+}
+
+.product:hover #normal-img{
+    transform: scale(1.1);
+}
+
+
+/* ---------------------------------------------S kia layout */
+/* todo--------------------------------------------------------- kia hide */
+.kia{
+    display: none;
+}
+
+
+
+
+
+.choice-main .brand-space{
+    width: 401px;
+    height: 504px;
+    padding: 13px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+/* -------------------------------------------brand-national style */
+.brand-space .national-space{
+    width: 371px;
+    height: 49px;
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 1px solid #7d7d7d;
+}
+.brand-space .national-space .kor, .foreign{
+    flex: 1;
+    text-align: center;
+    height: 49px;
+    line-height: 49px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.brand-space .national-space .national-on{
+    color: #000;
+    border-bottom: 5px solid #030108;
+}
+.brand-space .national-space a{
+    height: 49px;
+    display: block;
+    color: #7d7d7d;
+    transition: 0.1s;
+}
+
+/* -------------------------------------------brand list style */
+.brand-listbox{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.brand-listbox .brand-list{
+    margin-top: 20px;
+    width: 100%;
+    height: 399px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.brand-list::-webkit-scrollbar {
+    margin-left: 20px;
+    width: 8px; /* 스크롤바의 너비 */
+}
+.brand-list::-webkit-scrollbar-thumb {
+    background-color: #c9c8c9; /* 스크롤바의 색상 */
+    border-radius: 4px; /* 둥근 모서리 */
+}
+.brand-list::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* 스크롤바 트랙 색상 */
+}
+.brand-list li a{
+    width: 360px;
+    height: 58px;
+    margin-bottom: 11px;
+    background-color: #e9e9e9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 8px;
+    transition: ease-out 0.3s;
+}
+.brand-list .virtual{
+    background-color: transparent;
+    width: 360px;
+    height: 58px;
+    margin-bottom: 11px;
+}
+.brand-list li a .brand-name{
+    display: flex;
+    align-items: center;
+}
+.brand-list li a .brand-name .BI{
+    margin-right: 15px;
+}
+.brand-list li a .brand-name h4{
+    font-size: 18px;
+    font-weight: 400;
+    color: #959595;
+    transition: 0.3s;
+}
+.brand-list li a p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #959595;
+    transition: 0.3s;
+}
+.brand-list li:hover .brand-name h4{
+    color: #000;
+    font-weight: 600;
+}
+.brand-list li:hover p{
+    color: #000;
+}
+
+/* ---------------------------------- S brand-on style */
+.brand-list li a.brand-on{
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.brand-list li a.brand-on h4{
+    color: #000;
+    font-weight: 600;
+}
+.brand-list li a.brand-on p{
+    color: #000;
+}
+
+/* ---------------------------------S advice style */
+.choice .advice{
+    margin-top: 38px;
+}
+.choice .advice p{
+    text-align: center;
+    color: #787878;
+    font-size: 20px;
+}
+.choice .advice .advice-btnbox{
+    margin: 17px auto 0;
+    width: 281px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #c30000;
+    overflow: hidden;
+}
+.choice .advice .advice-btn{
+    display: flex;
+}
+.choice .advice .advice-btn li{
+    width: 281px;
+    height: 55px;
+}
+
+.choice .advice .advice-btn a{
+    display: block;
+    width: 281px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* !------------------------------------------------------------------S reco */
+.reco{
+    margin: 197px auto 0;
+    width: 1200px;
+    height: 453px;
+} 
+.reco h2{
+    margin-left: 18px;
+    font-weight: 500;
+    line-height: 63px;
+}
+.reco-box{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reco-box li iframe{
+    width: 382px;
+    height: 241px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.reco-box li p{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+.reco-box li .p-effect{
+    font-weight: 700;
+    color: #c30000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* !-----------------------------------------------------------------S guide-title */
+.guide-title { 
+    margin-top: 197px; 
+    padding: 0; /* 초기 패딩을 0으로 설정 */ 
+    width: 100%; 
+    height: 0; /* 초기 높이를 0으로 설정 */ 
+    background-color: #333; 
+    text-align: center; 
+    background: url(../images/guide-bg.jpg) center; 
+    overflow: hidden; 
+    transition: height 0.8s ease, padding 0.8s ease;
+}
+
+.guide-txt h3{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 300;
+}
+.guide-txt h3 span{
+    font-weight: 600;
+}
+.guide-txt p{
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.guide-btnbox{
+    margin: 45px auto 0;
+    width: 281px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #c30000;
+    overflow: hidden;
+}
+.guide-btn{
+    display: flex;
+}
+.guide-btn li{
+    width: 281px;
+    height: 55px;
+}
+
+.guide-btn li a{
+    display: block;
+    width: 281px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* !------------------------------------------------------------------S care */
+.care{
+    margin: 153px auto 0;
+    width: 1200px;
+    height: auto;
+} 
+.care h2{
+    margin-left: 18px;
+    font-weight: 500;
+}
+.care h5{
+    margin-top: 20px;
+    margin-left: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.care .more-btn{
+    margin-left: 18px;
+    margin-top: 20px;
+    border: 0;
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 2px solid #000;
+    width: auto;
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+    letter-spacing: -1px;
+}
+.care .more-btn img{
+    transition: 0.3s;
+}
+.care .more-btn img.rotated{
+    transform: rotate(90deg);
+}
+.care .more-btn:hover img{
+    transform: rotate(90deg);
+}
+
+.care .more-txtbox{
+    margin-top: 30px;
+    margin-left: 18px;
+    width: auto;
+    display: flex;
+    gap: 100px;
+}
+.care .more-txtbox h4{
+    color: #c30000;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0;
+}
+.care .more-txtbox p{
+    margin-top: 5px;
+    color: #707070;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 0;
+}
+
+
+.care-box{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+.care-box .box{
+    flex: 1;
+    background-color: #000;
+    height: 297px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-position: center;
+    transition: flex 0.5s;
+    position: relative;
+}
+.care-box .box h3{
+    position: absolute;
+    color: #fff;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    transition: 0.5s;
+}
+.care-box .box p{
+    opacity: 0;
+    position: absolute;
+    bottom: -40px;
+    color: #fff;
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+
+
+.care-box #sago{
+    background-image: url(../images/care/sago.png);
+}
+.care-box #visit{
+    background-image: url(../images/care/visit.png);
+}
+.care-box #emergency{
+    background-image: url(../images/care/emergency.png);
+}
+.care-box #check{
+    background-image: url(../images/care/check.png);
+}
+.care-box div.care-on{
+    flex: 3;
+}
+.care-box div.care-on h3{
+    left: 20px;
+    bottom: 45px;
+    transform: translate(0);
+}
+.care-box div.care-on p{
+    opacity: 1;
+    left: 20px;
+    bottom: 20px;
+}
+/* !------------------------------------------------------------------S benefit */
+.benefit{
+    margin: 197px auto 0;
+    width: 100%;
+    height: 618px;
+    /* background-color: #ddd; */
+} 
+.benefit-title{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit-title h2{
+    margin-left: 18px;
+    font-weight: 500;
+}
+.benefit-title h5{
+    margin-top: 20px;
+    margin-left: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.benefit-box{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.benefit-box .benefit-info{
+    width: 131px;
+    height: 44px;
+    border: 1px solid #bbbaba;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #555;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.benefit-box .benefit-info:hover{
+    border: 1px solid #777;
+    color: #000;
+
+}
+.benefit-box .benefit-more{
+    width: 174px;
+    height: 44px;
+    border: 1px solid #f98585;
+    border-radius: 8px;
+    background-color: #c30000;
+    color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.benefit-box .benefit-more:hover{
+    background-color: #fff;
+    color: #c30000;
+    border: 1px solid #c30000;
+}
+
+
+.slider-container {
+    margin-top: 30px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider-wrapper{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start; /* 위쪽 정렬 */
+    position: relative;
+    left: 0;
+}
+.slider-item{
+    flex: 0 0 calc(100% / 7);
+    transition: 0.3s;
+    position: relative;
+    background-color: #000;
+    border-radius: 10px;
+}
+.slider-item h5{
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+.slider-item p{
+    position: absolute;
+    color: #ffffffc4;
+    width: 100%;
+    font-size: 14px;
+    bottom: 20px;
+    text-align: center;
+}
+.slider-item img{
+    width: 100%;
+}
+
+/* !------------------------------------------------------------------S event */
+.event{
+    margin: 197px auto 0;
+    width: 1200px;
+    height: auto;
+} 
+.event h2{
+    font-weight: 700;
+    margin-left: 18px;
+}
+.event h5{
+    margin-top: 20px;
+    margin-left: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.event-banner{
+    margin-top: 30px;
+    width: 100%;
+    height: 257px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.event-banner ul{
+    width: 100%;
+}
+.event-banner ul li{
+    width: 100%;    
+}
+.event-banner ul li a img{
+    width: 1200px;
+    height: 257px;
+    object-fit: cover;
+}
+
+
+
+
+/* ---------------------------S event tab */
+.event-tab{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.promotionbox, .eventbox{
+    flex: 1;
+    height: 140px;
+    border-radius: 10px;
+}
+.promotionbox{
+    position: relative;
+    background-color: #fdefef;
+    overflow: hidden;
+}
+.promotionbox a{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.promotionbox h4{
+    position: absolute;
+    font-size: 28px;
+    font-weight: 700;
+    left: 40px;
+    bottom: 65px;
+    letter-spacing: 1px;
+    z-index: 99;
+}
+.promotionbox p{
+    position: absolute;
+    font-size: 18px;
+    left: 40px;
+    bottom: 35px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #575252;
+    z-index: 99;
+}
+.promotionbox .overlay{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10%;
+    height: 30%;
+    border-radius: 0 0 0 120px;
+    background-color: #ffdcdc;
+    transition: 0.3s ease-in;
+}
+.promotionbox:hover .overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+}
+
+
+
+.event-tab a:hover h4{
+    animation : bounce 2s infinite alternate;
+}
+.event-tab a:hover p{
+    animation : bounce 2s infinite alternate;
+}
+@keyframes bounce {
+    0%, 50%, 100% {
+    transform: translateY(0);
+    }
+    25% {
+    transform: translateY(-5px);
+    }
+    75% {
+    transform: translateY(-5px);
+    }
+}
+
+
+.eventbox{
+    position: relative;
+    background-color: #eaffc5;
+    overflow: hidden;
+}
+.eventbox a{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.eventbox h4{
+    position: absolute;
+    font-size: 28px;
+    font-weight: 700;
+    left: 40px;
+    bottom: 65px;
+    letter-spacing: 1px;
+    z-index: 99;
+    
+}
+.eventbox p{
+    position: absolute;
+    font-size: 18px;
+    left: 40px;
+    bottom: 35px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #474747;
+    z-index: 99;
+}
+.eventbox .overlay{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10%;
+    height: 30%;
+    border-radius: 0 0 0 120px;
+    background-color: #d4fd87fb;
+    transition: 0.3s ease-in;
+}
+.eventbox:hover .overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+/* !------------------------------------------------------------------S magazine */
+.magazine{
+    margin: 197px auto 0;
+    width: 1200px;
+    height: auto;
+}
+.magazine h2{
+    font-weight: 700;
+    margin-left: 18px;
+}
+.magazine h5{
+    margin-top: 20px;
+    margin-left: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.magazine .more-btn{
+    margin-left: 18px;
+    margin-top: 20px;
+    border: 0;
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 2px solid #000;
+    width: auto;
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+    letter-spacing: -1px;
+}
+.magazine iframe{
+    width: 100%;
+    height: 550px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* !------------------------------------------------------------------S footer */
+footer{
+    margin: 183px auto 0;
+    width: 100%;
+    height: 433px;
+    background-color: #111;
+    color: #b5b6b6;
+    padding-top: 70px;
+}
+.footer-space{
+    width: 1200px;
+    margin: 0 auto;
+}
+.f-top{
+    display: flex;
+}
+select {
+    background-color: transparent;
+    border: 1px solid #b5b6b6;
+    border-radius: 4px;
+    padding: 6px 5px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #b5b6b6;
+    width: 150px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+select option {
+    background-color: #fff;
+    color: #495057;
+    padding: 0px;
+    border-radius: 5px;
+}
+select option:hover {
+    background-color: #e9ecef;
+    color: #212529;
+}
+.f-bottom{
+    margin-top: 20px;
+    display: flex;
+}
+.f-left{
+    width: 770px;
+    height: auto;
+    border-right: 2px solid #b5b6b685;
+}
+.f-left ul{
+    display: flex;
+    gap: 10px;
+}
+.f-left ul:not(:first-child){
+    margin-top: 15px;
+}
+/* 회사정보 */
+.f-left p{
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 23px;
+}
+/* 개인정보 관련 강조 */
+.f-left ul:first-child span{
+    color: #fff;
+    font-weight: 500;
+}
+/* 등록증 관련 스타일 */
+.f-left ul:nth-child(2) li{
+    color: #fff;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+/* -----------------------------------------S f-right */
+.f-right{
+    padding-left: 60px;
+    height: auto;
+}
+.f-right h5{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+.f-right h3{
+    margin-top: 4px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 30px;
+}
+.f-right p{
+    margin-top: 4px;
+    font-size: 14px;
+    margin-bottom: 58px;
+}
+.f-right ul{
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+}
