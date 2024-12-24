@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롯데마이카 리뉴얼</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="sticky">
+        <button class="top-btn">
+            <img src="images/stiky_top-btn.png" alt="">
+        </button>
+        <button class="talk-btn">
+            <img src="images/stiky_talk-btn.png" alt="">
+        </button>
+        <h3>1588-1230</h3>
+        <p>사고접수 24시간 가능</p>
+    </div>
+    <div class="modal-info">
+        <div class="modal-box">
+            <a href="#" class="info-close"><img src="images/modal/btn-close.png" alt=""></a>
+            <button class="modal-btn">
+                등급별 혜택 자세히 보기
+            </button>
+        </div>
+    </div>
+    <div class="modal-more">
+        <div class="modal-morebox">
+            <img src="images/modal/modal-more-title.png" alt="">
+            <a href="#" class="more-close"><img src="images/modal/btn-close.png" alt=""></a>
+            
+            <div class="tablebox">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>스탠다드</td>
+                        <td>프리미엄</td>
+                        <td>프레스티지</td>
+                    </tr>
+                    <tr>
+                        <td>롯데렌터카</td>
+                        <td>24시간 무료 이용권 매년 2매<br>
+                            (단, 2천 CC 이하)</td>
+                        <td>24시간 무료 이용권 매년 2매(단, 2천 CC 이하)<br>
+                            24시간 무료 이용권 매년 1매 (전 차종 대상)</td>
+                        <td>24시간 무료 이용권 매년 2매(단, 2천 CC 이하)<br>
+                            24시간 무료 이용권 매년 2매 (전 차종 대상)</td>
+                    </tr>
+                    <tr>
+                        <td>카셰어링 G Car</td>
+                        <td>G Car 패스100 첫 달 구독료 무료,<br>
+                            월 구독료 할인<br>
+                            (신규/재계약 고객 대상)</td>
+                        <td>G Car 패스100 첫 달 구독료 무료,<br>
+                            월 구독료 할인<br>
+                            (신규/재계약 고객 대상)</td>
+                        <td>G Car 패스100 첫 달 구독료 무료,<br>
+                            월 구독료 할인<br>
+                            (신규/재계약 고객 대상)</td>
+                    </tr>
+                    <tr>
+                        <td>롯데스카이힐CC</td>
+                        <td>그린피 상시 할인<br>
+                            (주중 최대 30%, 주말 20%)</td>
+                        
+                        <td>그린피 상시 할인 (주중 최대 30%, 주말 20%)<br>
+                            주중 그린피(4인) 무료이용권 1매</td>
+                        <td>그린피 상시 할인 (주중 최대 30%, 주말 20%)<br>
+                            주중 그린피(4인) 무료이용권 2매</td>
+                    </tr>
+                    <tr>
+                        <td>롯데호텔</td>
+                        <td>상시 특별 우대가</td>
+                        <td>특별 우대가<br>
+                            제주 주중 숙박 1박권 1매</td>
+                        <td>상시 특별 우대가</td>
+                    </tr>
+                    <tr>
+                        <td>롯데리조트</td>
+                        <td>상시 객실 할인 (주중 20%, 주말 15%)</td>
+                        <td>상시 객실 할인 (주중 20%, 주말 15%)</td>
+                        <td>상시 객실 할인 (주중 20%, 주말 15%)<br>
+                            제주 아트빌라스 주중 1박권 1매</td>
+                    </tr>
+                    <tr>
+                        <td>롯데인터넷면세점</td>
+                        <td>구매금액대별 8% 상당<br>
+                            즉시 할인 월 1회</td>
+                        <td>구매금액대별 8% 상당 즉시 할인 월 1회<br>
+                            롯데면세점 등급우대 혜택 제공</td>
+                        <td>구매금액대별 8% 상당 즉시 할인 월 1회<br>
+                            롯데면세점 등급우대 혜택 제공<br>
+                            쇼핑지원금(LDF PAY) 5만원권 2매</td>
+                    </tr>
+                    <tr>
+                        <td>GS칼택스</td>
+                        <td>휘발유, 경유 상시 40원/L 할인<br>
+                            LPG 상시 30원/L 할인</td>
+                        <td>휘발유, 경유 상시 40원/L 할인<br>
+                            LPG 상시 30원/L 할인</td>
+                        <td>휘발유, 경유 상시 40원/L 할인<br>
+                            LPG 상시 30원/L 할인</td>
+                    </tr>
+                    <tr>
+                        <td>EV충전</td>
+                        <td>GS칼텍스 10%, SK일렉링크 15%,<br>
+                            EVSIS 20% 상시 할인</td>
+                        <td>GS칼텍스 10%, SK일렉링크 15%,<br>
+                            EVSIS 20% 상시 할인</td>
+                        <td>GS칼텍스 10%, SK일렉링크 15%,<br>
+                            EVSIS 20% 상시 할인</td>
+                    </tr>
+                    <tr>
+                        <td>세차클링</td>
+                        <td>방문세차 상시 10% 할인</td>
+                        <td>방문세차 상시 10% 할인</td>
+                        <td>방문세차 상시 10% 할인</td>
+                    </tr>
+                    <tr>
+                        <td>롯데홈쇼핑</td>
+                        <td>L.CLUB 무료 이용<br>
+                            (매월 15% 할인쿠폰 10장 등)</td>
+                        <td>L.CLUB 무료 이용<br>
+                            (매월 15% 할인쿠폰 10장 등)</td>
+                        <td>L.CLUB 무료 이용<br>
+                            (매월 15% 할인쿠폰 10장 등)</td>
+                    </tr>
+                    <tr>
+                        <td>키자니아</td>
+                        <td>상시 서울 반일권 20% 할인</td>
+                        <td>상시 서울 반일권 20% 할인</td>
+                        <td>상시 서울 반일권 20% 할인</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <header>
+        <div class="header-fixed">
+            <ul class="util">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <nav>
+                <div class="gnb-box">
+                    <h1 class="logo"><a href="#"><img src="images/logo.png" alt=""></a></h1>
+
+                    <ul class="gnb">
+                        <li><a href="#">인기차량 즉시출고</a></li>
+                        <li><a href="#">자유반납형</a></li>
+                        <li><a href="#">수입차</a></li>
+                        <li><a href="#">중고차 장기렌트</a></li>
+                        <li><a href="#">기획전</a></li>
+                        <li><a href="#">고객후기</a></li>
+                    </ul>
+                    <ul class="icon-menu">
+                        <li class="split"><img src="images/icon_gnbsplit.png" alt=""></li>
+                        <li class="icon-talk"><a href="#"><img src="images/icon_talk.png" alt="">상담신청</a></li>
+                        <li class="icon-receipt"><a href="#"><img src="images/icon_receipt.png" alt=""> 견적보관함</a></li>
+                        <li class="icon-list"><a href="#"><img src="images/icon_list.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="list">
+            <nav class="list-txtbox">
+                <ul>
+                    <li>마이카 안내
+                        <ul class="lnb">
+                            <li><a href="#">마이카 소개</a></li>
+                            <li><a href="#">마이카 이용 안내</a></li>
+                            <li><a href="#">개인사업자 이용 안내</a></li>
+                        </ul>
+                    </li>
+
+                    <li>심사/계약
+                        <ul class="lnb">
+                            <li><a href="#">최근 견적 심사</a></li>
+                            <li><a href="#">심사 견적 계약</a></li>
+                        </ul>
+                    </li>
+
+                    <li>기획전
+                        <ul class="lnb">
+                            <li><a href="#">기획전</a></li>
+                        </ul>
+                    </li>
+
+                    <li>혜택 및 이벤트
+                        <ul class="lnb">
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">종료된 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                        </ul>
+                    </li>
+
+                    <li>CAR talk
+                        <ul class="lnb">
+                            <li><a href="#">고민상담소</a></li>
+                            <li><a href="#">고객후기</a></li>
+                            <li><a href="#">마이카 매거진</a></li>
+                        </ul>
+                    </li>
+                    <li>고객센터
+                        <ul class="lnb">
+                            <li><a href="#">상담신청</a></li>
+                            <li><a href="#">입고알림</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">일반문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- !--------------------------------------------------------------S visual -->
+    <ul class="visual">
+        <li><a href="#"><img src="images/visual/visual-1.png" alt=""></a></li>
+    </ul>
+
+
+
+
+    <!-- !--------------------------------------------------------------S choice -->
+    <div class="choice">
+        <section class="choice-space">
+            <h2>
+                내차 선택하기
+            </h2>
+    
+            <div class="choice-search">
+                <div class="choice-indi">
+                    <p>2024년 11월 계약 건 수 기준 정렬</p>
+                    <button class="choice-prev"><img src="images/btn-arrow-left.png" alt=""></button>
+                    <h4>1</h4><h5>/ 5</h5> 
+                    <button class="choice-next"><img src="images/btn-arrow-right.png" alt=""></button>
+                </div>
+
+                <div class="search">
+                    <input type="text" placeholder="차량명을 검색해보세요">
+                    <button class="search-btn">
+                        <img src="images/btn-search.png" alt="search btn">
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- -----------------------------------------S choice layout -->
+            <div class="choice-main">
+                <div class="sheetwrap">
+                    <div class="sheetbox hyundai"> <!--apsol-->
+                        <ul class="sheet-space"> <!--rel-->
+                            <li class="sheet-page1 sheet">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="best1-sheet">
+                                                <div class="best-label" id="best1">
+                                                    Best1
+                                                </div>
+                                                <h3 class="car-name">
+                                                    케스퍼
+                                                </h3>
+                                                <h3 class="price">월 244,290원~</h3>
+                                                <img src="images/car-caption_now.png" alt="" class="now">
+                                                <img src="images/car-img/hyundai/casper.png" alt="" id="best1-img">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <ul class="normal-sheet">
+                                            <li><a href="#">
+                                                    <div class="product">
+                                                        <div class="best-label">
+                                                            Best2
+                                                        </div>
+                                                        <h3 class="car-name">
+                                                            그랜저
+                                                        </h3>
+                                                        <h3 class="price">월 382,759원~</h3>
+                                                        <img src="images/car-caption_now.png" alt="" class="now">
+                                                        <img src="images/car-caption_free.png" alt="">
+                                                        <img src="images/car-img/hyundai/grandeur.png" alt="" id="normal-img">
+                                                    </div>
+                                                </a></li>
+            
+                                            <li><a href="#">
+                                                    <div class="product">
+                                                        <div class="best-label">
+                                                            Best3
+                                                        </div>
+                                                        <h3 class="car-name">
+                                                            아반떼
+                                                        </h3>
+                                                        <h3 class="price">월 312,932원~</h3>
+                                                        <img src="images/car-caption_now.png" alt="" class="now">
+                                                        <img src="images/car-caption_free.png" alt="" class="free">
+                                                        <img src="images/car-img/hyundai/avante.png" alt="" id="normal-img">
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sheet-page2 sheet">
+                                <ul>
+                                    <!-- page2 left -->
+                                    <li>
+                                        <ul class="normal-sheet">
+                                            <li><a href="#">
+                                                    <div class="product">
+                                                        <h3 class="car-name">
+                                                            싼타페
+                                                        </h3>
+                                                        <h3 class="price">월 376,317원~</h3>
+                                                        <img src="images/car-caption_free.png" alt="" class="free">
+                                                        <img src="images/car-img/hyundai/santafe.png" alt="" id="normal-img">
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <div class="product">
+                                                        <h3 class="car-name">
+                                                            쏘나타
+                                                        </h3>
+                                                        <h3 class="price">월 349,317원~</h3>
+                                                        <img src="images/car-caption_free.png" alt="" class="free">
+                                                        <img src="images/car-img/hyundai/sonata.png" alt="" id="normal-img">
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- page2 right -->
+                                    <li>
+                                        <ul class="normal-sheet">
+                                            <li><a href="#">
+                                                    <div class="product">
+                                                        <h3 class="car-name">
+                                                            투싼
+                                                        </h3>
+                                                        <h3 class="price">월 359,067원~</h3>
+                                                        <img src="images/car-caption_now.png" alt="" class="now">
+                                                        <img src="images/car-caption_free.png" alt="" class="free">
+                                                        <img src="images/car-img/hyundai/tucson.png" alt="" id="normal-img">
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <div class="product">
+                                                        <h3 class="car-name">
+                                                            코나
+                                                        </h3>
+                                                        <h3 class="price">월 328,474원~</h3>
+                                                        <img src="images/car-caption_free.png" alt="" class="free">
+                                                        <img src="images/car-img/hyundai/kona.png" alt="" id="normal-img">
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ---------------------------------S sheetbox kia -->
+                    <div class="sheetbox kia">
+                        <ul class="sheet-space"> <!--rel-->
+                            <li class="sheet-page1 sheet">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="best1-sheet">
+                                                <div class="best-label" id="best1">
+                                                    Best1
+                                                </div>
+                                                <h3 class="car-name">
+                                                    카니발
+                                                </h3>
+                                                <h3 class="price">월 408,649원~</h3>
+                                                <img src="images/car-caption_now.png" alt="" class="now">
+                                                <img src="images/car-img/kia/carnival.png" alt="" id="best1-img">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <ul class="normal-sheet">
+                                            <li><a href="#">
+                                                    <div class="product">
+                                                        <div class="best-label">
+                                                            Best2
+                                                        </div>
+                                                        <h3 class="car-name">
+                                                            쏘렌토
+                                                        </h3>
+                                                        <h3 class="price">월 386,757원~</h3>
+                                                        <img src="images/car-caption_now.png" alt="" class="now">
+                                                        <img src="images/car-caption_free.png" alt="">
+                                                        <img src="images/car-img/kia/sorento.png" alt="" id="normal-img">
+                                                    </div>
+                                                </a></li>
+            
+                                            <li><a href="#">
+                                                    <div class="product">
+                                                        <div class="best-label">
+                                                            Best3
+                                                        </div>
+                                                        <h3 class="car-name">
+                                                            셀토스
+                                                        </h3>
+                                                        <h3 class="price">월 335,165원~</h3>
+                                                        <img src="images/car-caption_now.png" alt="" class="now">
+                                                        <img src="images/car-caption_free.png" alt="" class="free">
+                                                        <img src="images/car-img/kia/seltos.png" alt="" id="normal-img">
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sheet-page2 sheet">
+                                <ul>
+                                    <!-- kia page2 left -->
+                                    <li>
+                                        <ul class="normal-sheet">
+                                            <li><a href="#">
+                                                    <div class="product">
+                                                        <h3 class="car-name">
+                                                            스포티지
+                                                        </h3>
+                                                        <h3 class="price">월 367,950원~</h3>
+                                                        <img src="images/car-caption_free.png" alt="" class="free">
+                                                        <img src="images/car-caption_now.png" alt="" class="now">
+                                                        <img src="images/car-img/kia/sportage.png" alt="" id="normal-img">
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <div class="product">
+                                                        <h3 class="car-name">
+                                                            K8
+                                                        </h3>
+                                                        <h3 class="price">월 475,365원~</h3>
+                                                        <img src="images/car-caption_now.png" alt="" class="now">
+                                                        <img src="images/car-img/kia/k8.png" alt="" id="normal-img">
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- page2 right -->
+                                    <li>
+                                        <ul class="normal-sheet">
+                                            <li><a href="#">
+                                                    <div class="product">
+                                                        <h3 class="car-name">
+                                                            니로
+                                                        </h3>
+                                                        <h3 class="price">월 338,942원~</h3>
+                                                        <img src="images/car-caption_now.png" alt="" class="now">
+                                                        <img src="images/car-img/kia/niro.png" alt="" id="normal-img">
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <div class="product">
+                                                        <h3 class="car-name">
+                                                            레이
+                                                        </h3>
+                                                        <h3 class="price">월 244,009원~</h3>
+                                                        <img src="images/car-img/kia/ray.png" alt="" id="normal-img">
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!---------------------------------- S brand layout -->
+                <div class="brand-space">
+                    <div class="national-space">
+                        <div class="kor"><a href="#" class="national-on">국산</a></div>
+                        <div class="foreign"><a href="#">수입</a></div>
+                    </div>
+
+                    <div class="brand-listbox">  <!--rel-->
+                        <ul class="brand-list kor-list"> <!--apsol  KOR LIST-->
+                            <li><a href="#" class="brand-on" id="hyundai-btn">
+                                <div class="brand-name">
+                                    <img src="images/BI/bi_hyundai.png" alt="logo" class="BI">
+                                    <h4>현대</h4>
+                                </div>
+                                <p class="value-count">11종</p>
+                            </a></li>
+
+                            <li><a href="#" id="kia-btn">
+                                <div class="brand-name">
+                                    <img src="images/BI/bi_kia.png" alt="logo" class="BI">
+                                    <h4>기아</h4>
+                                </div>
+                                <p class="value-count">12종</p>
+                            </a></li>
+
+                            <li><a href="#">
+                                <div class="brand-name">
+                                    <img src="images/BI/bi_genesiss.png" alt="logo" class="BI">
+                                    <h4>제네시스</h4>
+                                </div>
+                                <p class="value-count">5종</p>
+                            </a></li>
+
+                            <li><a href="#">
+                                <div class="brand-name">
+                                    <img src="images/BI/bi_renault.png" alt="logo" class="BI">
+                                    <h4>르노</h4>
+                                </div>
+                                <p class="value-count">2종</p>
+                            </a></li>
+
+                            <li><a href="#">
+                                <div class="brand-name">
+                                    <img src="images/BI/bi_kg.png" alt="logo" class="BI">
+                                    <h4>KG모빌리티</h4>
+                                </div>
+                                <p class="value-count">3종</p>
+                            </a></li>
+                            
+                            <li><a href="#">
+                                <div class="brand-name">
+                                    <img src="images/BI/bi_chevolet.png" alt="logo" class="BI">
+                                    <h4>쉐보레</h4>
+                                </div>
+                                <p class="value-count">2종</p>
+                            </a></li>
+                            <li class="virtual"></li>
+                            <li class="virtual"></li>
+                            <li class="virtual"></li>
+                        </ul>
+                        <ul class="brand-list foreign-list"> <!--apsol  FOREIGN LIST-->
+                            <li><a href="#" class="brand-on">
+                                <div class="brand-name">
+                                    <img src="images/BI/bi_benz.png" alt="logo" class="BI">
+                                    <h4>BENZ</h4>
+                                </div>
+                                <p class="value-count">4종</p>
+                            </a></li>
+
+                            <li><a href="#">
+                                <div class="brand-name">
+                                    <img src="images/BI/bi_bmw.png" alt="logo" class="BI">
+                                    <h4>BMW</h4>
+                                </div>
+                                <p class="value-count">3종</p>
+                            </a></li>
+
+                            <li><a href="#">
+                                <div class="brand-name">
+                                    <img src="images/BI/bi_volvo.png" alt="logo" class="BI">
+                                    <h4>VOLVO</h4>
+                                </div>
+                                <p class="value-count">3종</p>
+                            </a></li>
+
+                            <li><a href="#">
+                                <div class="brand-name">
+                                    <img src="images/BI/bi_lexus.png" alt="logo" class="BI">
+                                    <h4>LEXUS</h4>
+                                </div>
+                                <p class="value-count">3종</p>
+                            </a></li>
+
+                            <li><a href="#">
+                                <div class="brand-name">
+                                    <img src="images/BI/bi_audi.png" alt="logo" class="BI">
+                                    <h4>AUDI</h4>
+                                </div>
+                                <p class="value-count">3종</p>
+                            </a></li>
+                            
+                            <li><a href="#">
+                                <div class="brand-name">
+                                    <img src="images/BI/bi_polestar.png" alt="logo" class="BI">
+                                    <h4>POLESTAR</h4>
+                                </div>
+                                <p class="value-count">1종</p>
+                            </a></li>
+                            <li class="virtual"></li>
+                            <li class="virtual"></li>
+                            <li class="virtual"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="advice">
+            <p>전문매니저와 상세하게 상담이 필요하신가요?</p>
+            <div class="advice-btnbox">
+                <ul class="advice-btn">
+                    <li><a href="#">
+                            견적 상담 신청하기
+                        </a></li>
+                    <li><a href="#">
+                        </a></li>
+                    <li><a href="#">
+                            견적 상담 신청하기
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- !--------------------------------------------------------------S reco -->
+    <div class="reco">
+        <h2>
+            <span class="title-color">롯데마이카?</span><br>
+            이런분들께 추천드려요!
+        </h2>
+
+        <ul class="reco-box">
+            <li>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PcDDtzRMEgM?si=Z2dzfPXrlxtynn0P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p><span class="p-effect">초보운전</span> 지우씨의 첫 차는 마이카로</p>
+            </li>
+            <li>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RtB8ANMNS7c?si=-9R8Ix4AOieLypVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>아빠 재민씨의 <span class="p-effect">패밀리카는</span> 마이카로</p>
+            </li>
+            <li>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/swFg8c1Eotg?si=LbmtpKVJOi50aSI7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p><span class="p-effect">개인사업자라면</span> 고민없이 마이카로</p>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!-- !--------------------------------------------------------------S guide-title -->
+    <div class="guide-title">
+        <div class="guide-txt">
+            <h3>
+                마이카를 <span>탄다,</span> 내 삶이 <span>달린다!</span>
+            </h3>
+            <p>드라이브의 즐거움만 즐기세요. 케어하고, 챙겨주고, 지켜주는건 롯데렌터카 My car의 전문가들이 할게요.</p>
+            <div class="guide-btnbox">
+                <ul class="guide-btn">
+                    <li><a href="#">
+                            마이카 5분 이용 안내
+                        </a></li>
+                    <li><a href="#">
+                        </a></li>
+                    <li><a href="#">
+                            마이카 5분 이용 안내
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- !--------------------------------------------------------------S care -->
+    <div class="care">
+        <h2>My car <span class="title-color">Care</span></h2>
+        <h5>아무것도 신경쓰지마세요.<br>
+            차량정비는 마이카에서 만족스럽게 해결할게요.
+        </h5>
+        <button class="more-btn">
+            자세히 보기 <img src="images/care/more_arrow.png" alt="">
+        </button>
+        <div class="more-txtbox">
+            <div class="more-txt">
+                <h4>전문가 방문 점검(연 1회)</h4>
+                <p>
+                    엔진룸 클리닝<br>
+                    베터리 부동액, 워셔액, 브레이크 패드 점검<br>
+                    차량 상태 테스트<br>
+                    차량 내부 살균 소독<br>
+                    타이어 공기압 체크 및 보증
+                </p>
+            </div>
+            <div class="more-txt">
+                <h4>필수 소모품 교체(연 1회)</h4>
+                <p>
+                    엔진오일 / 와이퍼 / 워셔액 / 에어컨 필터
+                </p>
+            </div>
+            <div class="more-txt">
+                <h4>기본 정비 서비스 제공</h4>
+                <p>
+                    사고 정비 / 검사 정비 / 긴급 출동
+                </p>
+            </div>
+        </div>
+
+        <div class="care-box">
+            <div class="box care-on" id="sago">
+                <h3>사고정비</h3>
+                <p>사고나도 걱정없는 정비소 입고 서비스</p>
+            </div>
+            <div class="box" id="visit">
+                <h3>방문정비</h3>
+                <p>내가 원하는 곳으로 찾아오는 정비</p>
+            </div>
+            <div class="box" id="emergency">
+                <h3>긴급출동</h3>
+                <p>사고나도 걱정없는 정비소 입고 서비스</p>
+            </div>
+            <div class="box" id="check">
+                <h3>검사정비</h3>
+                <p>번거로운 자동차 정기검사도 알아서</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- !--------------------------------------------------------------S benefit -->
+    <div class="benefit">
+        <div class="benefit-title">
+            <h2>My car <span class="title-color">Benefit</span></h2>
+            <h5>이런게 바로 혜택이죠.<br>
+                골프, 리조트, 홈쇼핑 등 다양한 혜택을 받을 수 있어요.
+            </h5>
+            <div class="benefit-box">
+                <button class="benefit-info">멤버쉽 등급 안내</button>
+                <button class="benefit-more">등급별 헤택 자세히 보기</button>
+            </div>
+        </div>
+        <div class="slider-container"> <!--overflow-->
+            <ul class="slider-wrapper">
+                <li class="slider-item">
+                    <h5>롯데렌터카</h5>
+                    <p>24시간무료이용권</p>
+                    <img src="images/benefit/benefit_img_rent.png" alt="rent">
+                </li>
+                <li class="slider-item">
+                    <h5>롯데스카이힐CC</h5>
+                    <p>주중 최대 30%, 주말 20%</p>
+                    <img src="images/benefit/benefit_img_cc.png" alt="cc">
+                </li>
+                <li class="slider-item">
+                    <h5>카쉐어링 G car</h5>
+                    <p>G car 월 구독료 할인</p>
+                    <img src="images/benefit/benefit_img_gcar.png" alt="gcar">
+                </li>
+                <li class="slider-item">
+                    <h5>롯데리조트</h5>
+                    <p>상시 객실 할인</p>
+                    <img src="images/benefit/benefit_img_resort.png" alt="resort">
+                </li>
+                <li class="slider-item">
+                    <h5>롯데인터넷면세점</h5>
+                    <p>구매금액대별 8% 상당 할인</p>
+                    <img src="images/benefit/benefit_img_duty.png" alt="duty">
+                </li>
+                
+                <li class="slider-item">
+                    <h5>EV충전</h5>
+                    <p>EV충전 상시 할인</p>
+                    <img src="images/benefit/benefit_img_ev.png" alt="ev">
+                </li>
+                <li class="slider-item">
+                    <h5>GS칼택스</h5>
+                    <p>휘발유, 경유 상시 할인</p>
+                    <img src="images/benefit/benefit_img_oli.png" alt="oli">
+                </li>
+                <li class="slider-item">
+                    <h5>세차클링</h5>
+                    <p>방문세차 상시 10% 할인</p>
+                    <img src="images/benefit/benefit_img_clean.png" alt="clean">
+                </li>
+                <li class="slider-item">
+                    <h5>롯데홈쇼핑</h5>
+                    <p>L.CLUB 무료이용, 매월 쿠폰 제공</p>
+                    <img src="images/benefit/benefit_img_shopping.png" alt="shopping">
+                </li>
+                <li class="slider-item">
+                    <h5>키자니아</h5>
+                    <p>상시 서울 반일권 20% 할인</p>
+                    <img src="images/benefit/benefit_img_kids.png" alt="kids">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- !--------------------------------------------------------------S event -->
+    <div class="event">
+        <h2>Event</h2>
+        <h5>마이카에서 다양한 이벤트와 기획전을 만나보세요!</h5>
+        <div class="event-banner">
+            <ul>
+                <li><a href="#"><img src="images/banner/banner1.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="event-tab">
+            <div class="promotionbox">
+                <a href="#">
+                    <h4>기획전</h4>
+                    <p>금주 가장 Hot한 기획전을 소개해 드립니다.</p>
+                </a>
+                <div class="overlay"></div>
+            </div>
+            <div class="eventbox">
+                <a href="#">
+                    <h4>이벤트</h4>
+                    <p>다양한 상품과 이벤트가 준비되어 있어요</p>
+                </a>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- !--------------------------------------------------------------S magazine -->
+    <div class="magazine">
+        <h2>Magazine</h2>
+        <h5>마이카 메커진을 통해 새로운 소식을 빠르게 만나 보실 수 있어요.</h5>
+        <button class="more-btn">
+            자세히 보기 <img src="images/care/more_arrow.png" alt="">
+        </button>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HjI9JpTBjmQ?si=JuTTvx5SMGTZcOYN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+
+    <!-- !--------------------------------------------------------------S footer -->
+    <footer>
+        <div class="footer-space">
+            <div class="f-top">
+                <h1 class="f-logo"><img src="images/footer/footer-icon_logo.png" alt=""></h1>
+                <select name="" id="">
+                    <option hidden="">페밀리사이트</option>
+                    <option value="">롯데렌터카</option>
+                    <option value="">비즈카</option>
+                    <option value="">마이카 멤버쉽</option>
+                    <option value="">마이카 세이브</option>
+                    <option value="">롯데오토옥션</option>
+                    <option value="">롯데오토리스</option>
+                    <option value="">롯데오토케어</option>
+                    <option value="">롯데렌터카 G car</option>
+                </select>
+            </div>
+            <div class="f-bottom">
+                <div class="f-left">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#"><span>개인정보처리방침</span></a></li>
+                        <li><a href="#"><span>영상정보처리기기 운영관리방침</span></a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이메일주소무단수집거부</a></li>
+                        <li><a href="#">찾아오시는길</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">대출성 금융상품판매대리 중개업 등록증</a></li>
+                        <li><a href="#">리스 전화권유판매원 신원확인</a></li>
+                    </ul>
+
+                    <p>
+                        롯데렌탈(주)대표이사 최진환<br>
+                        경기도 안양시 동안구 전파로88 신원비젼타워 8층 서울본사 : 서울시 강남구 테헤란로 422KT타워 6~9층<br>
+                        사업자등록번호 214-87-79183 통신판매등록번호 : 제2010-경기안양-420호<br>
+                        해외 82-2-797-8000 보험대차 1588-4920
+                    </p>
+                    <ul class="icon">
+                        <li><a href="#"><img src="images/footer/footer-icon_blog.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer/footer-icon_face.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer/footer-icon_instar.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer/footer-icon_kakao.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="f-right">
+                    <h5>고객센터</h5>
+                    <h3>1588-1230</h3>
+                    <p>평일 : 08:30 ~ 19:00 &nbsp;&nbsp;&nbsp;&nbsp;
+                        사고처리문의 : 24시간 가능
+                    </p>
+                    <h5>앱 다운로드</h5>
+                    <ul>
+                        <li><a href="#"><img src="images/footer/footer-icon_google.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/footer/footer-icon_app.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
